@@ -25,7 +25,7 @@ $desktop-size: 1024px;
   --primary_colour_2: #e9caa6;
   --primary_colour_transparent: rgba(211,148,74,.5);
   --primary_colour_hover: #e37f09;
-  --background-color: rgb(17, 24, 39);
+  --background-color: #1D1D1D;
   --secondary-color: rgb(250,204,21);
 
 }
@@ -56,27 +56,7 @@ $desktop-size: 1024px;
     outline: none !Important;
   }
 
-  //&::-webkit-scrollbar {
-  //  width: .80em;
-  //  opacity: .4;
-  //  transition: .5s;
-  //
-  //  &:hover
-  //  {
-  //    opacity: 1;
-  //  }
-  //}
-  //
-  //&::-webkit-scrollbar-track {
-  //  border: 1px solid #333;
-  //  margin: 10px 0;
-  //  transition: .5s;
-  //}
-  //
-  //&::-webkit-scrollbar-thumb {
-  //  background-color: darkgrey;
-  //  transition: .5s;
-  //}
+
 }
 
 .prata
@@ -90,6 +70,10 @@ $desktop-size: 1024px;
   letter-spacing: .3rem;
 }
 
+.bg-gray-2
+{
+  background: rgb(45,47,49) !Important;
+}
 .bg-gray-3
 {
   background: #1D1D1D !Important;

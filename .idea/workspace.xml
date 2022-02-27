@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="798bea92-a707-42e9-bd12-a0b8c5aadee1" name="Default Changelist" comment="Host change">
-      <change beforePath="$PROJECT_DIR$/pages/404.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/company.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/favorites.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/kyc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord/listing/[id].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord/listing/new.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord/listings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord/payout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord/requests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/landlord_messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/properties.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/property/[id].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dashboard/security.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/listing/[id].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/rent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sale.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/state/[slug].js" beforeDir="false" />
+    <list default="true" id="798bea92-a707-42e9-bd12-a0b8c5aadee1" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/public/images/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/appstore.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/barcode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/playstore.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/signed_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/signed_up2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdn/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdn/css/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdn/css/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -86,8 +77,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/icons" />
       <recent name="$PROJECT_DIR$/pages/dashboard" />
       <recent name="$PROJECT_DIR$/pages/dashboard/landlord" />
       <recent name="$PROJECT_DIR$/pages/dashboard/landlord/listing" />
@@ -266,14 +257,8 @@
       <workItem from="1643486704583" duration="16667000" />
       <workItem from="1643590137209" duration="19000" />
       <workItem from="1645698449283" duration="1198000" />
-      <workItem from="1645974460194" duration="9616000" />
-    </task>
-    <task id="LOCAL-00365" summary="General update">
-      <created>1633093079336</created>
-      <option name="number" value="00365" />
-      <option name="presentableId" value="LOCAL-00365" />
-      <option name="project" value="LOCAL" />
-      <updated>1633093079339</updated>
+      <workItem from="1645974460194" duration="10340000" />
+      <workItem from="1645991924840" duration="7116000" />
     </task>
     <task id="LOCAL-00366" summary="General update">
       <created>1633127007467</created>
@@ -611,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643507827382</updated>
     </task>
-    <option name="localTasksCounter" value="414" />
+    <task id="LOCAL-00414" summary="Initial commit">
+      <created>1645985418197</created>
+      <option name="number" value="00414" />
+      <option name="presentableId" value="LOCAL-00414" />
+      <option name="project" value="LOCAL" />
+      <updated>1645985418198</updated>
+    </task>
+    <option name="localTasksCounter" value="415" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +628,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Register" />
     <MESSAGE value="forgot password" />
     <MESSAGE value="dashboard layout" />
     <MESSAGE value="dashboard sidepanel" />
@@ -661,7 +652,8 @@
     <MESSAGE value="Scrolling" />
     <MESSAGE value="error pages" />
     <MESSAGE value="Host change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Host change" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

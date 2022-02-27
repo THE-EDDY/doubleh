@@ -3,7 +3,7 @@
   --primary_colour_2: #e9caa6;
   --primary_colour_transparent: rgba(211,148,74,.5);
   --primary_colour_hover: #e37f09;
-  --background-color: rgb(17, 24, 39);
+  --background-color: #1D1D1D;
   --secondary-color: rgb(250,204,21);
 }
 
@@ -33,6 +33,10 @@
 .playfair {
   font-family: "Playfair dIsplay", serif !important;
   letter-spacing: 0.3rem;
+}
+
+.bg-gray-2 {
+  background: #2d2f31 !important;
 }
 
 .bg-gray-3 {
