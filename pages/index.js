@@ -277,7 +277,7 @@ export default function Home() {
 
                             </div>
                             <div className="col-lg-5 padding_50-top padding_50-bottom text-end">
-
+                                <ScrollAnimation delay={500} animateIn="slideInUp">
                                 <h1 className="playfair mt-5 font-100 font-xl mb-4 font-white">Deals? Discounts?</h1>
 
                                 <div className="row align-items-center">
@@ -300,7 +300,7 @@ export default function Home() {
                                         <img src="/images/appstore.svg"  className="img-fluid" />
                                     </div>
                                 </div>
-
+                                </ScrollAnimation>
 
 
 
@@ -313,14 +313,42 @@ export default function Home() {
 
 
 
-                <section className="bg-gray-3 padding_10-xs padding_50-top padding_50-bottom  font-white">
+                <section className="bg-gray-3 padding_10-xs padding_30-top padding_50-bottom  font-white">
                     <div className="container">
 
                             <div className="col-lg-10 text-center mx-auto">
 
-                                <h1 className="playfair mt-5 font-100 font-xl mb-4 font-white">People like you <img src="/images/heart.png"/> us</h1>
+                                <h1 className="playfair mb-5 font-100 font-xl font-white">People like you <img src="/images/heart.png"/> us</h1>
+
+                                <div className="col-lg-6 mx-auto">
+
+                                <Carousel autoplay>
+                                    <div>
+                                        <em className="font-white font-sm">“ I enjoyed my stay. It was everything luxury.
+                                            The customer service was topnotch. I will definitely
+                                            visit again anytime I am in Nigeria “</em>
+
+                                        <p className="font-weight-500 mt-4 font-sm-3 font-white">Olatunde OG.</p>
+                                    </div>
+                                    <div>
+                                        <em className="font-white font-sm">“ I enjoyed my stay. It was everything luxury.
+                                            The customer service was topnotch. I will definitely
+                                            visit again anytime I am in Nigeria “</em>
+
+                                        <p className="font-weight-500 mt-4 font-sm-3 font-white">Olatunde OG.</p>
+                                    </div>
+                                    <div>
+                                        <em className="font-white font-sm">“ I enjoyed my stay. It was everything luxury.
+                                            The customer service was topnotch. I will definitely
+                                            visit again anytime I am in Nigeria “</em>
+
+                                        <p className="font-weight-500 mt-4 font-sm-3 font-white">Olatunde OG.</p>
+                                    </div>
 
 
+                                </Carousel>
+
+                                </div>
 
 
                             </div>
