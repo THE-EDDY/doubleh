@@ -33,136 +33,18 @@ export default function Register(props) {
         setUser({...user , ['gender'] : e.target.value });
     }
 
-    const register = async (e) => {
-        toast('Processing. Please wait', {icon: '⌛'})
-
-        if(user.terms === true) {
-
-            e.preventDefault();
-
-
-            let data = new FormData();
-            data.append('password', user.password);
-            data.append('fullname', user.first_name + ' ' + user.last_name);
-            data.append('email', user.email);
-            data.append('dob', user.dob);
-            data.append('gender', user.gender);
-
-
-            let response = axios({
-                method: 'POST',
-                url: Api.register,
-                data: data
-            }).then((response) => {
-
-                if (response.data.status === 'success') {
-
-                    setRegisteredUser(response.data.data);
-                    setDisplay(1);
-
-                    toast.success(response.data.message);
-                    //   window.top.location.href = '/dashboard/';
-
-                } else {
-                    toast.error(response.data.message);
-                }
-            }).catch((e) => {
-                console.log('error login user', e);
-            })
-
-        }else{
-            toast.error('You must agree to our terms of service to create an account')
-        }
-    }
-
-    const changeLocation = async () => {
-
-        if(myLocation !== '') {
-
-            toast('Setting your location.', {icon: '⌛'})
-
-            let data = new FormData();
-            data.append("location", myLocation);
-
-
-            axios({
-                method: 'POST',
-                url: Api.setLocation,
-                data: data,
-                headers: {
-                    'Authorization': 'Bearer ' + registeredUser.web_token
-                }
-            }).then((response) => {
-
-                if (response.data.status === 'success') {
-
-                    setDisplay(2);
-                    toast.success(response.data.message);
-
-
-                } else {
-                    toast.error(response.data.message);
-                }
-            }).catch((e) => {
-                console.log('error login user', e);
-            })
-
-        }else{
-            toast.error('You must select a location')
-        }
-    }
-
-    const changeCurrency = async () => {
-
-        if(myCurrency !== '') {
-
-            toast('Setting your currency', {icon: '⌛'})
-
-            let data = new FormData();
-            data.append("currency", myCurrency);
-
-
-            axios({
-                method: 'POST',
-                url: Api.setCurrency,
-                data: data,
-                headers: {
-                    'Authorization': 'Bearer ' + registeredUser.web_token
-                }
-            }).then((response) => {
-
-                if (response.data.status === 'success') {
-
-                    setDisplay(3);
-                    toast.success(response.data.message);
-
-
-                } else {
-                    toast.error(response.data.message);
-                }
-            }).catch((e) => {
-                console.log('error login user', e);
-            })
-
-        }else{
-            toast.error('You must select a currency')
-        }
-    }
-
     return(
         <section className="d-flex h-100 align-items-center">
             <div className="animated fadeInRight w-100">
             <Logo size="large" color="color" />
 
-                {
-                    display === 0 ?(
                         <div>
                             <h1 className="font-lg-2 margin_20-top lh-sm mb-0  heading">
                                 Create an account
                             </h1>
                             <p className="font-gray mb-5">Your gateway to the perfect home</p>
 
-                            <form onSubmit={register}>
+                            <form>
                                 <div className="row">
                                     <div className="col">
                                         <div className="form-floating mb-3">
@@ -211,7 +93,7 @@ export default function Register(props) {
 
                                 <div className="mt-3">
                                     <input type="checkbox" required name="terms" className="me-2" onChange={handleChange} />
-                                    I agree to Avamot's terms of service and privacy policy
+                                    I agree to Double H's terms of service and privacy policy
                                 </div>
 
                                 <button className="btn btn-primary mt-4 w-100">Create account</button>
@@ -222,60 +104,8 @@ export default function Register(props) {
 
                             </div>
                         </div>
-                    ): display === 1 ? (
-                        <div>
-                            <h1 className="font-lg-2 margin_20-top lh-sm mb-0  heading">
-                                Choose a location
-                            </h1>
-                            <p className="font-gray mb-5">We will show you rentals and properties for sale in this location.
-                                You can change this anytime you want</p>
 
-                            <div>
-                                {
-                                    context.locations.map((location) => (
-                                        <div onClick={() => setMyLocation(location.selector)} className={myLocation === location.selector ? "p-3 border-bottom cursor-pointer bg-secondary" : "p-3 border-bottom cursor-pointer hover_primary_transparent"}>
-                                            {location.name}
-                                        </div>
-                                    ))
-                                }
 
-                                <button onClick={() => changeLocation()} className="btn btn-primary mt-5 w-100">Next <ChevronForwardOutline color="#fff" /></button>
-                            </div>
-                        </div>
-                    ): display === 2 ? (
-                        <div>
-                            <h1 className="font-lg-2 margin_20-top lh-sm mb-0  heading">
-                                Choose a currency
-                            </h1>
-                            <p className="font-gray mb-5">We will show you prices and rates only in this currency.
-                                You can change this anytime you want</p>
-
-                            <div>
-                                {
-                                    context.currencies.map((currency) => (
-                                        <div onClick={() => setMyCurrency(currency.name)} className={myCurrency === currency.name ? "p-3 border-bottom cursor-pointer bg-secondary" : "p-3 border-bottom cursor-pointer hover_primary_transparent"}>
-                                            {currency.name} ({currency.symbol})
-                                        </div>
-                                    ))
-                                }
-
-                                <button onClick={() => changeCurrency()} className="btn btn-primary mt-5 w-100">Next <ChevronForwardOutline color="#fff" /></button>
-                            </div>
-                        </div>
-                    ) : (
-                        <div>
-                            <h1 className="font-lg-2 margin_20-top lh-sm mb-0 text-primary heading">
-                                Welcome To Avamot
-                            </h1>
-                            <p className="lead mt-5 mb-3">Hi {registeredUser.first_name},</p>
-                            <p className="font-gray mb-3">Thank you for choosing Avamot. We have a large portfolio of listings
-                                ranging from residential homes, corporate houses & condominiums. We also assit in managing your listings and portfolios for you.
-                                </p>
-
-                            <button onClick={() => props.displayRegister(0)} className="btn btn-primary mt-5 w-100">Continue to login <ChevronForwardOutline color="#fff" /></button>
-                        </div>
-                            )
-                }
 
 
             </div>

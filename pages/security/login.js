@@ -22,80 +22,6 @@ export default function Login(props) {
     }
 
 
-    const login = async (e, social = null, proceed = 'false') => {
-        toast('Processing. Please wait', {icon: '⌛'})
-
-        if(social === null) {
-            e.preventDefault();
-        }
-
-        let data = new FormData();
-        data.append('email', social ? social : user.email);
-        data.append('password', user.password);
-        data.append('proceed', proceed);
-
-
-        let response = axios({
-            method: 'POST',
-            url: Api.login,
-            data: data
-        }).then((response) => {
-
-            if (response.data.status === 'success') {
-                //console.log(response.data.data.currency);
-
-                toast.success('Login successful');
-                let d_user = response.data.data;
-                ls.set('4vam07', response.data.data.web_token);
-                ls.set('curr', response.data.data.currency);
-                context.defineUser(d_user);
-
-                props.hideCanvas();
-
-                 //   window.top.location.href = '/dashboard/';
-
-            }else{
-                toast.error(response.data.message);
-            }
-        }).catch((e) => {
-            console.log('error login user', e);
-        })
-    }
-
-    const resetPassword = async (e) => {
-        toast('Processing. Please wait', {icon: '⌛'})
-
-        e.preventDefault();
-
-        let data = new FormData();
-        data.append('email', resetUser);
-
-
-        axios({
-            method: 'POST',
-            url: Api.forgotPassword,
-            data: data
-        }).then((response) => {
-
-            if (response.data.status === 'success') {
-
-                toast.success(response.data.message, {
-                    duration: 6000,
-                });
-
-                setResetUser('');
-
-                props.hideCanvas();
-
-                //   window.top.location.href = '/dashboard/';
-
-            }else{
-                toast.error(response.data.message);
-            }
-        }).catch((e) => {
-            console.log('error login user', e);
-        })
-    }
 
     return(
         <section className="d-flex h-75 align-items-center">
@@ -107,11 +33,11 @@ export default function Login(props) {
                         <div>
                             <h1 className="font-lg-2 margin_50-top lh-sm mb-0  heading">
                                 Sign in to your <br/>
-                                Avamot account
+                                Double H account
                             </h1>
                             <p className="font-gray mb-5">Your gateway to the perfect home</p>
 
-                            <form onSubmit={login}>
+                            <form>
                                 <div className="form-floating mb-3">
                                     <input type="email" onChange={handleChange} value={user.email} name="email" required className="form-control" placeholder="username"/>
                                     <label>Email</label>
@@ -134,9 +60,9 @@ export default function Login(props) {
                             <h1 className="font-lg-2 margin_50-top lh-sm mb-0  heading">
                                 Forgot your password? <br/>
                             </h1>
-                            <p className="font-gray mb-5">Regain access to your Avamot account</p>
+                            <p className="font-gray mb-5">Regain access to your Double H account</p>
 
-                            <form onSubmit={resetPassword}>
+                            <form >
                                 <div className="form-floating mb-3">
                                     <input type="email" onChange={handleForgotChange} value={resetUser} name="email" required className="form-control" placeholder="email"/>
                                     <label>Email</label>

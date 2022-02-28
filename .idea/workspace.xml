@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="798bea92-a707-42e9-bd12-a0b8c5aadee1" name="Default Changelist" comment="Section 4 - added final carousel">
-      <change afterPath="$PROJECT_DIR$/public/images/app_2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/insta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/play_2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/twi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/verve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/visa.png" afterDir="false" />
+    <list default="true" id="798bea92-a707-42e9-bd12-a0b8c5aadee1" name="Default Changelist" comment="footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdn/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdn/css/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdn/css/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cdn/css/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/config/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/config/constant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/security/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/security/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/security/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/security/register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,14 +249,7 @@
       <workItem from="1643590137209" duration="19000" />
       <workItem from="1645698449283" duration="1198000" />
       <workItem from="1645974460194" duration="10340000" />
-      <workItem from="1645991924840" duration="13286000" />
-    </task>
-    <task id="LOCAL-00368" summary="General update">
-      <created>1633206661586</created>
-      <option name="number" value="00368" />
-      <option name="presentableId" value="LOCAL-00368" />
-      <option name="project" value="LOCAL" />
-      <updated>1633206661590</updated>
+      <workItem from="1645991924840" duration="13502000" />
     </task>
     <task id="LOCAL-00369" summary="General update">
       <created>1633206970487</created>
@@ -606,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646028874718</updated>
     </task>
-    <option name="localTasksCounter" value="417" />
+    <task id="LOCAL-00417" summary="footer">
+      <created>1646033600208</created>
+      <option name="number" value="00417" />
+      <option name="presentableId" value="LOCAL-00417" />
+      <option name="project" value="LOCAL" />
+      <updated>1646033600208</updated>
+    </task>
+    <option name="localTasksCounter" value="418" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +619,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="dashboard sidepanel" />
     <MESSAGE value="dashboard nav" />
     <MESSAGE value="Password update" />
     <MESSAGE value="KYC" />
@@ -656,7 +643,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Section 3 - added images and animation" />
     <MESSAGE value="Section 4 - added final carousel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 4 - added final carousel" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
