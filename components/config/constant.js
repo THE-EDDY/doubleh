@@ -29,7 +29,7 @@ import {router} from "next/router";
 
 
 
-const Logo = ({size,className}) => {
+const Logo = ({size,className, copyright = false}) => {
 
 return(
     <div className="d-flex align-items-center">x
@@ -38,7 +38,10 @@ return(
                            width: size === 'large' ? 170 : 30,
                            resizeMode: 'contain',
                        }} />
-                       <h6 className="font-white font-sm-2 ms-3 mb-0">Double H</h6>
+                       <h6 className="font-white font-sm-2 ms-3 mb-0">
+                           {
+                              copyright ? '©  2021 Double H' : 'Double H'
+                           } </h6>
     </div>
 
 )

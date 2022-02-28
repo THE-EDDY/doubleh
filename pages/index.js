@@ -264,7 +264,7 @@ export default function Home() {
             </ScrollAnimation>
 
             <ScrollAnimation delay={5} animateIn="slideInUp">
-                <section className="bg-gray-2 padding_10-xs  padding_50-bottom font-white" >
+                <section className="bg-gray-2 padding_10-xs  padding_50-bottom font-white" style={{position: 'relative'}}>
                     <div className="container">
 
                         <div className="row" >
